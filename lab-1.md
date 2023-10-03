@@ -32,7 +32,7 @@ bash: cd: Hello.java: Not a directory
 [user@sahara ~/lecture1]$ 
 ```
 
-We get the error `bash: cd: Hello.java: Not a directory` because the current working directory can only be changed to another directory and Hello.java is a file.
+We get the error `bash: cd: Hello.java: Not a directory` because the current working directory can only be changed to another directory and `Hello.java` is a file.
 
 ## ls
 
