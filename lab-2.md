@@ -47,23 +47,23 @@ class Handler implements URLHandler {
 }
 ```
 
-When making a request, the `handleRequest` method in the `Handler` class is called and recieves the request URL as input. 
+When making a request, the `handleRequest` method in the `Handler` class is called and receives the request URL as input. 
 
 The class `Handler` contains variables `message` and `num`. Initially, the value for `message` is `""` and the value for `num` is `1`.
 
-The `handleRequest` method checks if the path for the URL contains `/add-message` and then checks if the query for the URL looks like this: `s=<string>`. The method then adds the `<string>` part of the query and the current index value in `num` followed by `n\` to the `message` variable. Finally, the method returns the new value of `message` which gets output by the server.
+The `handleRequest` method checks if the path in the URL contains `/add-message` and then checks if the query in the URL looks like this: `s=<string>`. The method then adds the `<string>` part of the query and the value in `num` as index, followed by `n\`, to the `message` variable. Finally, the method returns the new value of `message` which gets output by the server.
 
-- When adding `/add-message?s=Hello World` to the URL and making a request to the server, `handleRequest` adds the string "hello world" as well as its current index value `num` to the `message` variable. Then, `num` is increased by 1. so `num` goes from 1 to 2. The method returns the new value of `message` and the server outputs that value which looks like this:
+- When adding `/add-message?s=Hello World` to the URL and making a request to the server, `handleRequest` adds the string "hello world" as well as its current index value `num` to the `message` variable. Then, `num` gets incremented. The method returns the new value of `message` and the server outputs that value which looks like this:
 
 ![sshot](./images/lab-2-1.png)
 
 The new value for `num` is now `2` and the new value for `message` is `"1. Hello World\n"`.
 
-- When adding `/add-message?s=UCSD` to the URL and making another request, `handleRequest` adds "UCSD" and its current index value in `num` to the `message` variable which then gets output by the server.
+- When adding `/add-message?s=UCSD` to the URL and making another request, `handleRequest` adds "UCSD" and its current index value `num` to the `message` variable which then gets output by the server.
 
 ![sshot](./images/lab-2-2.png)
 
-The new value for `num` is 3 and the new value for `message` is `"1. Hello World\n2. UCSD\n"`.
+The new value for `num` is now 3 and the new value for `message` is `"1. Hello World\n2. UCSD\n"`.
 
 ## Part 2
 
