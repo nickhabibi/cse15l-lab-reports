@@ -1,6 +1,6 @@
 <style>
     img {
-        width:200px;
+        width:500px;
     }
 </style>
 
