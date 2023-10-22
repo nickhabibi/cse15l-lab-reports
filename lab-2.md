@@ -63,7 +63,7 @@ The new value for `num` is now `2` and the new value for `message` is `"1. Hello
 
 ![sshot](./images/lab-2-2.png)
 
-The new value for `num` is now 3 and the new value for `message` is `"1. Hello World\n2. UCSD\n"`.
+The new value for `num` is now `3` and the new value for `message` is `"1. Hello World\n2. UCSD\n"`.
 
 ## Part 2
 
