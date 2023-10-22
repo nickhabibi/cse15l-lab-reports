@@ -53,13 +53,13 @@ The `handleRequest` method checks if the path for the URL contains `/add-message
 
 When adding `/add-message?s=Hello World` to the URL and making a request to the server, `handleRequest` concatonates the current value of `num` and the string "hello world" followed by `\n` to the `message` variable. Then, `num` is increased by 1. so `num` goes from 1 to 2. The method returns the value in `message` and the server outputs that value which looks like this:
 
-![sshot](./images/lab-2-1.png){.img}
+![sshot](./images/lab-2-1.png) {.img}
 
 `num` changed from `1` to `2` and `message` changed from `""` to `"1. Hello World\n"`
 
 When adding `/add-message?s=UCSD` and making another request, `handleRequest` concatonates "UCSD" and its current index value in `num` to the `message` variable which then gets output by the server.
 
-![sshot](./images/lab-2-2.png){.img}
+![sshot](./images/lab-2-2.png) {.img}
 
 `num` changed from `2` to `3` and `message` changed from `"1. Hello World\n"` to `"1. Hello World\n2. UCSD\n"`
 
