@@ -1,2 +1,3 @@
 - [Lab Report 1](lab-1.html)
-- - [Lab Report 2](lab-2.html)
+
+- [Lab Report 2](lab-2.html)
