@@ -1,5 +1,5 @@
 <style>
-    img {
+    img[alt=sshot], img[alt=keys] {
         width:500px;
     }
 </style>
