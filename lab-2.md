@@ -4,7 +4,7 @@
     }
 </style>
 
-## Lab Report 2
+# Lab Report 2
 
 ## Part 1
 
@@ -80,3 +80,9 @@ The new value for `num` is 3 and the new value for `message` is `"1. Hello World
 ![login](images/lab-2-5.png)
 
 ## Part 3
+
+On week 2 and week 3, I learned how to create a URL handler in java to be used by an http server. I also learned how to start an http server by compiling and running the java file and specifying the port of the server as a command-line argument.
+
+Before this, I didn't have much experience with github so I gained a lot of experience working with github and using git commands like `clone`, `add`, `commit`, and `push`.
+
+I also learned about setting up SSH keys and using `scp` to copy the public key stored on my local computer into a file on the remote `ieng6` host.
