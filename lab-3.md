@@ -182,7 +182,7 @@ nickhabibi@Nicks-MacBook-Pro docsearch % grep "food" -n technical/biomed/bcr605.
 
 `-n` is useful for locating specific lines in a file.
 
-descriptions for all of them can be found [here](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+descriptions for all of the grep options above can be found [here](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
 
 
