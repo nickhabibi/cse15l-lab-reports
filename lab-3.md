@@ -19,6 +19,7 @@ static double averageWithoutLowest(double[] arr) {
 }
 ```
 
+
 JUnit test method for a failure inducing input:
 
 ```
@@ -89,6 +90,101 @@ static double averageWithoutLowest(double[] arr) {
 ```
 
 The new output from running the tests:
+
+![output](images/lab-3-2.png)
+
+## Part 2
+
+`grep` searches a file for particular strings or patterns, and outputs the lines containing that string or pattern.
+
+### `-c`
+
+This option only prints the count of the lines that contain the pattern
+
+Examples:
+
+```
+nickhabibi@Nicks-MacBook-Pro docsearch % grep -c "government" technical/911report/chapter-1.txt
+3
+```
+
+```
+nickhabibi@Nicks-MacBook-Pro docsearch % grep -c "molecule" technical/biomed/1471-2172-3-16.txt    
+23
+```
+
+`-c` is useful for quickly determining the number of times a pattern has occured.
+
+### `-i`
+
+This option ignores the case-sensitivity of patterns.
+
+```
+nickhabibi@Nicks-MacBook-Pro docsearch % grep -i "PROof" technical/911report/chapter-13.5.txt
+            8. Tim Weiner, "U.S. Hard Put to Find Proof Bin Laden Directed Attacks," New York
+                requirement of tamper-proof passports. Testimony of Thomas Ridge before the House
+```
+
+```
+nickhabibi@Nicks-MacBook-Pro docsearch % grep -i "mediCINE" technical/biomed/gb-2003-4-9-r58.txt
+        study of medicine and disease states by allowing for the
+```
+
+`-i` is useful for making case-insensitive searches and reduces the need for entering multiple patterns as input.
+
+### `-l`
+
+This option displays a list of filenames for files containing the specified pattern.
+
+```
+nickhabibi@Nicks-MacBook-Pro docsearch % grep -l "fruits" technical/biomed/*.txt
+technical/biomed/1471-213X-3-3.txt
+technical/biomed/1471-2164-3-9.txt
+technical/biomed/1471-2431-2-4.txt
+technical/biomed/1471-2458-3-11.txt
+technical/biomed/1471-5945-1-3.txt
+technical/biomed/1472-6882-1-10.txt
+technical/biomed/1472-6882-1-7.txt
+technical/biomed/1475-2891-2-1.txt
+technical/biomed/bcr583.txt
+```
+
+```
+nickhabibi@Nicks-MacBook-Pro docsearch % grep -l "mandate" technical/plos/*.txt
+technical/plos/journal.pbio.0020052.txt
+technical/plos/journal.pbio.0020105.txt
+technical/plos/journal.pbio.0020353.txt
+technical/plos/pmed.0010039.txt
+technical/plos/pmed.0010042.txt
+technical/plos/pmed.0010046.txt
+technical/plos/pmed.0010052.txt
+technical/plos/pmed.0010060.txt
+technical/plos/pmed.0010064.txt
+technical/plos/pmed.0010066.txt
+technical/plos/pmed.0020009.txt
+```
+
+`-l` is useful for locating files that contain specific patterns. It can also be used as input for commands like `xargs`.
+
+### `-n`
+
+This option shows the line number for line or lines containing the specified pattern.
+
+```
+nickhabibi@Nicks-MacBook-Pro docsearch % grep -n "mandate" technical/plos/pmed.0010039.txt
+138:        recommend that employers be mandated to offer coverage to their employees. Others recommend
+```
+
+```
+nickhabibi@Nicks-MacBook-Pro docsearch % grep "food" -n technical/biomed/bcr605.txt
+675:        hormone replacement therapy could be eating foods or taking
+```
+
+`-n` is useful for locating specific lines in a file.
+
+descriptions for all of them can be found [here](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+
+
 
 
 
