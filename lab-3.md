@@ -1,3 +1,7 @@
+code {
+  white-space : pre-wrap !important;
+}
+
 # Lab Report 3
 
 ## Part 1
@@ -150,7 +154,8 @@ technical/biomed/bcr583.txt
 ```
 
 ```
-nickhabibi@Nicks-MacBook-Pro docsearch % grep -l "mandate" technical/plos/*.txt
+nickhabibi@Nicks-MacBook-Pro docsearch %
+grep -l "mandate" technical/plos/*.txt
 technical/plos/journal.pbio.0020052.txt
 technical/plos/journal.pbio.0020105.txt
 technical/plos/journal.pbio.0020353.txt
