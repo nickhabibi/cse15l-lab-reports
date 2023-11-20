@@ -1,6 +1,4 @@
-code {
-  white-space : pre-wrap !important;
-}
+
 
 # Lab Report 3
 
@@ -108,12 +106,12 @@ This option only prints the count of the lines that contain the pattern
 Examples:
 
 ```
-nickhabibi@Nicks-MacBook-Pro docsearch % grep -c "government" technical/911report/chapter-1.txt
+grep -c "government" technical/911report/chapter-1.txt
 3
 ```
 
 ```
-nickhabibi@Nicks-MacBook-Pro docsearch % grep -c "molecule" technical/biomed/1471-2172-3-16.txt    
+grep -c "molecule" technical/biomed/1471-2172-3-16.txt    
 23
 ```
 
@@ -124,13 +122,13 @@ nickhabibi@Nicks-MacBook-Pro docsearch % grep -c "molecule" technical/biomed/147
 This option ignores the case-sensitivity of patterns.
 
 ```
-nickhabibi@Nicks-MacBook-Pro docsearch % grep -i "PROof" technical/911report/chapter-13.5.txt
+grep -i "PROof" technical/911report/chapter-13.5.txt
             8. Tim Weiner, "U.S. Hard Put to Find Proof Bin Laden Directed Attacks," New York
                 requirement of tamper-proof passports. Testimony of Thomas Ridge before the House
 ```
 
 ```
-nickhabibi@Nicks-MacBook-Pro docsearch % grep -i "mediCINE" technical/biomed/gb-2003-4-9-r58.txt
+grep -i "mediCINE" technical/biomed/gb-2003-4-9-r58.txt
         study of medicine and disease states by allowing for the
 ```
 
@@ -141,7 +139,7 @@ nickhabibi@Nicks-MacBook-Pro docsearch % grep -i "mediCINE" technical/biomed/gb-
 This option displays a list of filenames for files containing the specified pattern.
 
 ```
-nickhabibi@Nicks-MacBook-Pro docsearch % grep -l "fruits" technical/biomed/*.txt
+grep -l "fruits" technical/biomed/*.txt
 technical/biomed/1471-213X-3-3.txt
 technical/biomed/1471-2164-3-9.txt
 technical/biomed/1471-2431-2-4.txt
@@ -154,7 +152,6 @@ technical/biomed/bcr583.txt
 ```
 
 ```
-nickhabibi@Nicks-MacBook-Pro docsearch %
 grep -l "mandate" technical/plos/*.txt
 technical/plos/journal.pbio.0020052.txt
 technical/plos/journal.pbio.0020105.txt
@@ -176,12 +173,12 @@ technical/plos/pmed.0020009.txt
 This option shows the line number for line or lines containing the specified pattern.
 
 ```
-nickhabibi@Nicks-MacBook-Pro docsearch % grep -n "mandate" technical/plos/pmed.0010039.txt
+grep -n "mandate" technical/plos/pmed.0010039.txt
 138:        recommend that employers be mandated to offer coverage to their employees. Others recommend
 ```
 
 ```
-nickhabibi@Nicks-MacBook-Pro docsearch % grep "food" -n technical/biomed/bcr605.txt
+grep "food" -n technical/biomed/bcr605.txt
 675:        hormone replacement therapy could be eating foods or taking
 ```
 
