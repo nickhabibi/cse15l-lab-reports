@@ -36,7 +36,7 @@ JUnit test method for an input that doesn't induce a failure:
 ```
 @Test
 public void testAverageWithoutLowest1() {
-  double[] input = {1, 2, 3, 4};
+  double[] input = {2, 2, 3, 4};
   double expected = 9.0/3;
   assertEquals(expected, ArrayExamples.averageWithoutLowest(input), 0.0001);
 }
@@ -182,7 +182,8 @@ nickhabibi@Nicks-MacBook-Pro docsearch % grep "food" -n technical/biomed/bcr605.
 
 `-n` is useful for locating specific lines in a file.
 
-descriptions for all of the grep options above can be found [here](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+descriptions for all of the grep options above can be found here: 
+https://www.geeksforgeeks.org/grep-command-in-unixlinux
 
 
 
