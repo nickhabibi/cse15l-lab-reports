@@ -36,8 +36,8 @@ JUnit test method for an input that doesn't induce a failure:
 ```
 @Test
 public void testAverageWithoutLowest1() {
-  double[] input = {2, 2, 3, 4};
-  double expected = 9.0/3;
+  double[] input = {1, 1, 2, 3};
+  double expected = 6.0/3;
   assertEquals(expected, ArrayExamples.averageWithoutLowest(input), 0.0001);
 }
 ```
