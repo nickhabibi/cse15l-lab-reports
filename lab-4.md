@@ -1,6 +1,6 @@
 # Lab Report 4
 
-In this lab report I will demonstrate the keys pressed to perform the tasks of:
+In this lab report I will demonstrate the keys pressed to perform the tasks below:
 1. logging into ieng6
 2. cloning my fork of the repository from github
 3. running the tests
